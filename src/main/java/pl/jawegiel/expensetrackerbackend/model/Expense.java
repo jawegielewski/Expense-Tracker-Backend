@@ -15,6 +15,7 @@ public class Expense {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotNull(message = "Name is required")
     @Column(name = "name")
     @Size(min = 3, max = 50, message = "Last name must be of length between 3-50")
     private String name;

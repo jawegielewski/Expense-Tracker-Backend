@@ -19,9 +19,9 @@ public class ExpenseService {
     }
 
     public void save(Expense expense) {
-        log.info("Adding coach: {}", expense.toString());
+        log.info("Adding expense: {}", expense.toString());
         expenseRepository.save(expense);
-        log.info("Coach successfully added");
+        log.info("Expense successfully added");
     }
 
     public List<Expense> findAll() {
