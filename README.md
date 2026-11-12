@@ -23,7 +23,7 @@ Once the server is running, open your browser and navigate to `http://localhost:
 
 ## App features
 
-App allows to add and show expanses related to driving a car:
+App allows to add and show expenses related to driving a car:
 
 ```
 adding expense
