@@ -16,8 +16,9 @@ public class Expense {
     private Long id;
 
     @NotNull(message = "Name is required")
+    @Pattern(regexp = "^[^0-9]*$", message = "Name must not contain numbers")
     @Column(name = "name")
-    @Size(min = 3, max = 50, message = "Last name must be of length between 3-50")
+    @Size(min = 3, max = 50, message = "Name must be of length between 3-50")
     private String name;
 
     @NotNull(message = "Price is required")
@@ -25,9 +26,9 @@ public class Expense {
     @Digits(integer = 6, fraction = 2, message = "Price format must be up to 6 digits and 2 decimals")
     private BigDecimal price;
 
-
+    @NotNull(message = "Date is required")
     @Column(name = "date_millis")
-    @Min(value = 1000000000000L, message = "Must be exactly 13 digits")
-    @Digits(integer = 13, fraction = 0, message = "Must be exactly 13 digits")
+    @Min(value = 1000000000000L, message = "Date is not correct")
+    @Digits(integer = 13, fraction = 0, message = "Date is not correct")
     private String dateMillis;
 }

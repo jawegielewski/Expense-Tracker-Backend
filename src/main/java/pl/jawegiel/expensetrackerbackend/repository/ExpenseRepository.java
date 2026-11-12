@@ -10,6 +10,5 @@ import java.util.Optional;
 public interface ExpenseRepository extends JpaRepository<Expense, Long> {
 
     Optional<Expense> findById(long id);
-
     Optional<Expense> findByName(String name);
 }

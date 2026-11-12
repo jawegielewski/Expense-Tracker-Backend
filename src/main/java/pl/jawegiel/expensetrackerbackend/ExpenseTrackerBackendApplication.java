@@ -11,5 +11,4 @@ public class ExpenseTrackerBackendApplication {
     public static void main(String[] args) {
         SpringApplication.run(ExpenseTrackerBackendApplication.class, args);
     }
-
 }
