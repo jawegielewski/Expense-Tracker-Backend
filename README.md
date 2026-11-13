@@ -19,11 +19,11 @@ To start a local backend, go to ExpenseTrackerBackendApplication.java and click:
 run
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:8080/`. The application will automatically reload whenever you modify any of the source files.
+Once the server is running, you can open your browser and navigate to `http://localhost:8080/`. It is optional, because all actions are performed on the frontend side.
 
 ## App features
 
-App allows to add and show expenses related to driving a car:
+App performs operations on local database related to driving a car:
 
 ```
 adding expense

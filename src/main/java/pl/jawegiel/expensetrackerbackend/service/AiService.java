@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @Slf4j
 public class AiService {
 
-    private static final String QUERY_MAIN = "Tell me the cheapest gas station in ";
+    private static final String QUERY_MAIN = "Tell me the cheapest gas station in + their offer of snacks";
 
     private final ChatClient chatClient;
 
